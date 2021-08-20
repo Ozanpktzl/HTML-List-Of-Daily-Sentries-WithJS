@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        
+    </head>
+<body>     
+<!---------------- Day -------------->
+
+<script>
+    var tarih=new Date();
+    var yil=tarih.getFullYear();
+    var ay=tarih.getMonth()+1; //+1 verdik.
+    var gun=tarih.getDate(); 
+    var saat=tarih.getHours();
+    var dakika=tarih.getMinutes();
+    var saniye=tarih.getSeconds();
+</script>
+
+<!---------------- Data -------------->
+<!-- Card-->
+
+
+
+<div class="contanier">
+    <div class="col-6">
+<div class="card" style="width: 25rem; margin-left: 0x;">
+   
+    <ul class="list-group list-group-flush">
+        <li class="list-group-item " style="background-color:rgb(217, 209, 208);" >
+            <h4 color style="color:red "> Nöbetçi Başkan Yardımcısı</h4>      
+<p id="bskYard"></p>
+<script>
+var parser, xmlDoc;
+var text = "<bookstore><book>" +
+    "<title>BOŞ KALSIN</title>" +
+    "<title>Hüseyin HIŞMAN</title>" +
+    "<title>Ekrem KÖSE</title>" +
+    "<title>Deniz KUTLU</title>" +
+    "<title>Abdullah DER</title>" +
+    "<title>Cenan ARSLAN</title>" +
+    "<title>Kalender ÖZDEMİR</title>" +
+    "<title>Sadık Semih KAYHAN</title>" +
+    "<title>Hüseyin HIŞMAN</title>" +
+    "<title>Ekrem KÖSE</title>" +
+    "<title>Deniz KUTLU</title>" +
+    "<title>Abdullah DER</title>" +
+    "<title>Cenan ARSLAN</title>" +
+    "<title>Kalender ÖZDEMİR</title>" +
+    "<title>Sadık Semih KAYHAN</title>" +
+    "<title>Hüseyin HIŞMAN</title>" +
+    "<title>Ekrem KÖSE</title>" +
+    "<title>Deniz KUTLU</title>" +
+    "<title>Abdullah DER</title>" +
+    "<title>Cenan ARSLAN</title>" +
+    "<title>Kalender ÖZDEMİR</title>" +
+    "<title>Sadık Semih KAYHAN</title>" +
+    "<title>HÜseyin HIŞMAN</title>" +
+    "<title>Ekrem KÖSE</title>" +
+    "<title>Deniz KUTLU</title>" +
+    "<title>Abdullah DER</title>" +
+    "<title>Cenan ARSLAN</title>" +
+    "<title>Kalender ÖZDEMİR</title>" +
+    "<title>Sadık Semih KAYHAN</title>" +
+    "<title>Hüseyin HIŞMAN</title>" +
+    "<title>Ekrem KÖSE</title>" +
+    "<title>Deniz KUTLU</title>" +
+    
+"</book></bookstore>";
+
+parser = new DOMParser();
+xmlDoc = parser.parseFromString(text,"text/xml");
+
+
+var x =document.getElementById("bskYard").innerHTML =
+xmlDoc.getElementsByTagName("title")[gun].childNodes[0].nodeValue;
+</script>
+</li>
+        <li class="list-group-item border border-3" style="background-color:rgb(217, 209, 208); margin-top: 5px;">
+            <h4 color style="color:red "> Nöbetçi Müdür</h4>
+
+<p id="mudur"></p>
+<script>
+var text, parser, xmlDoc;
+text = "<bookstore><book>" +
+    "<title>BOŞ KALSIN</title>"+
+    "<title>Serkan BATAK</title>"+
+    "<title>Mürteza KUTLU</title>"+
+    "<title>Hasan GÜNEYDAŞ</title>"+
+    "<title>M.Ali ÇAĞNIŞ</title>"+
+    "<title>Mehmet YILMIZ</title>"+
+    "<title>Temel ÖNDER</title>"+
+    "<title>Volkan ASLAN</title>"+
+    "<title>Nihat SARI</title>"+
+    "<title>Servet ÖN</title>"+
+    "<title>Ali Cihan SAKMAN</title>"+
+    "<title>Necati BOZKURT</title>"+
+    "<title>Mehmet ŞİMŞEK</title>"+
+    "<title>Battal SARIKAYA</title>"+
+    "<title>Devran ÇAKMAK</title>"+
+    "<title>Barış ARGUNŞAH</title>"+
+    "<title>İrfan BİRİNCİ</title>"+
+    "<title>Mürteza KUTLUK</title>"+
+    "<title>Temel ÖNDER</title>"+
+    "<title>Mehmet YILMAZ</title>"+
+    "<title>M. Ali ÇAĞNIŞ</title>"+
+    "<title>Hasan GÜNEYDAŞ</title>"+
+    "<title>Nihat SARI</title>"+
+    "<title>Serkan BATAK</title>"+
+    "<title>Servet ÖN</title>"+
+    "<title>Devran ÇAKMAK</title>"+
+    "<title>Mehmet ŞİMŞEK</title>"+
+    "<title>Ali Cihan SAKMAN</title>"+
+    "<title>Volkan ASLAN</title>"+
+    "<title>Necati BOZKURT</title>"+
+    "<title>Battal SARIKAYA</title>"+
+    "<title>Barış ARGUNŞAH</title>"+
+    
+"</book></bookstore>";
+
+parser = new DOMParser();
+xmlDoc = parser.parseFromString(text,"text/xml");
+
+
+var x =document.getElementById("mudur").innerHTML =
+xmlDoc.getElementsByTagName("title")[gun].childNodes[0].nodeValue;
+</script>
+</li>
+
+
+        
+
+</ul> 
+</div><!--/Card-->
+<!-- /Data -->
+</div>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+</body>
+</html>
